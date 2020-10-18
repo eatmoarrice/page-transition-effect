@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>3D Pages</title>
+	</head>
+	<body>
+		<button id="navButton" onclick="showMenu()">+</button>
+		<section class="page page--red active" id="page-1" onclick="activate(1)">
+			<h1>Here's a page (1)!</h1>
+		</section>
+		<section class="page page--green page--hidden" id="page-2" onclick="activate(2)">
+			<h1>Here's a page (2)!</h1>
+		</section>
+		<section class="page page--blue page--hidden" id="page-3" onclick="activate(3)">
+			<h1>Here's a page (3)!</h1>
+		</section>
+		<section class="page page--purple page--hidden page--appear" id="page-4" onclick="activate(4)">
+			<h1>Here's a page (4)!</h1>
+		</section>
+
+		<div id="fakePage1" class="fakePage"></div>
+		<div id="fakePage2" class="fakePage"></div>
+		<div class="menu" id="menu">
+			<div class="menu__1" id="menu__1" onclick="choosePage(1)">Page 1</div>
+			<div class="menu__2" id="menu__2" onclick="choosePage(2)">Page 2</div>
+			<div class="menu__3" id="menu__3" onclick="choosePage(3)">Page 3</div>
+			<div class="menu__4" id="menu__4" onclick="choosePage(4)">Page 4</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
